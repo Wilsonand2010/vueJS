@@ -1,7 +1,7 @@
 <template>
     <div class="form-group">
             <div class="form-check">
-            <input v-on:click="marcarCadastro(cadastro)" class="form-check-input" type="checkbox" id="gridCheck">
+            <input v-on:click="marcarCadastro(cadastros)" class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
                     Marcar como Feito
                 </label>
@@ -13,14 +13,9 @@
 export default {
 
 
-    props:['cadastro'],
+    props:['cadastros'],
 
-    data(){
-        return{
-            cadastros: this.cadastro,
-        }
-    },
-
+ 
 
     methods:{
         marcarCadastro(cadastros){

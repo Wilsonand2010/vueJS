@@ -9,7 +9,7 @@
             class="form-control"></textarea>
         </p>
             <button v-on:click="adicionarCadastro" class="btn btn-primary" type="submit">Cadastrar</button>
-</div>
+    </div>
 </template>
 
 <script>
